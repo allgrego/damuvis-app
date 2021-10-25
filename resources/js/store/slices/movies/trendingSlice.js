@@ -26,7 +26,7 @@ export const fetchTrending = (page = 1) => (dispatch) =>{
     const bearerToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NzJjYTE5NTEwZGY4Y2UwNmNiYjM0YTg2ZGI4MWFmMSIsInN1YiI6IjVmOGNmY2VkMTdjNDQzMDAzN2RhNTAwYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hUkG3NjP6NXDZ8LmZn6JBj3USOd5e8gPtgcISeAwoOA';
     const language = 'es';
     
-    const url = `https://api.themoviedb.org/3/trending/all/day?api_key=${apiKey}&page=${page}&language=${language}`;
+    const url = `https://api.themoviedb.org/3/trending/all/week?api_key=${apiKey}&page=${page}&language=${language}`;
  
      fetch(url,
          {
